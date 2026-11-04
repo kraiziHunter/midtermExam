@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore ABET-accredited engineering degree programs at Engineering College: Computer Science, AI, Robotics, Mechanical, Electrical, and Civil Engineering.">
+  <meta name="keywords" content="engineering programs, computer engineering degree, robotics curriculum, mechanical engineering, ABET accredited bachelor">
+  <title>Degree Programs | Engineering College</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Fixed Top Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="Engineering College Homepage">
+          <img src="assets/images/logo.svg" alt="Engineering College Emblem" width="180" height="42">
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar" aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admissions.html">Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="student-life.html">Student Life &amp; News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <!-- Theme Mode Switcher -->
+            <li class="nav-item ms-lg-2 my-2 my-lg-0">
+              <button class="theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle theme">
+                <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+              </button>
+            </li>
+            <!-- CTA Apply Button -->
+            <li class="nav-item ms-lg-2">
+              <a class="btn-nav-apply" href="register.html">
+                <i class="bi bi-pencil-square" aria-hidden="true"></i>
+                <span>Register / Apply</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- Page Banner -->
+    <section class="page-banner" aria-labelledby="programs-banner-title">
+      <div class="container position-relative">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav mb-3">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Programs</li>
+          </ol>
+        </nav>
+        <h1 id="programs-banner-title" class="page-banner-title">Engineering Degree Programs</h1>
+        <p class="page-banner-lead">
+          Rigorous, accredited curricula combining deep mathematical theories with immersive project labs and industry co-ops.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Filter & Search Section -->
+    <section class="section-padding" aria-labelledby="catalog-heading">
+      <div class="container">
+        <div class="row align-items-center mb-4 g-3">
+          <div class="col-lg-6">
+            <h2 id="catalog-heading" class="h3 fw-bold mb-1">Academic Degree Catalog</h2>
+            <p class="text-secondary small mb-0" id="programResultCount">Showing all engineering programs</p>
+          </div>
+          <div class="col-lg-6">
+            <!-- Live Search Bar -->
+            <div class="input-group">
+              <span class="input-group-text bg-surface border-end-0" id="search-addon">
+                <i class="bi bi-search text-muted" aria-hidden="true"></i>
+              </span>
+              <input type="text" id="programSearchInput" class="form-control border-start-0" 
+                     placeholder="Search programs by keyword, discipline, or skills..." 
+                     aria-label="Search programs by keyword" aria-describedby="search-addon">
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Department Tabs -->
+        <div class="filter-tabs mb-4" role="tablist" aria-label="Program department filter">
+          <button type="button" class="filter-btn active" data-program-filter="all">All Disciplines</button>
+          <button type="button" class="filter-btn" data-program-filter="computer">Computer &amp; AI</button>
+          <button type="button" class="filter-btn" data-program-filter="mechanical">Mechanical &amp; Aero</button>
+          <button type="button" class="filter-btn" data-program-filter="electrical">Electrical &amp; Energy</button>
+          <button type="button" class="filter-btn" data-program-filter="robotics">Robotics &amp; Mechatronics</button>
+          <button type="button" class="filter-btn" data-program-filter="civil">Civil &amp; Sustainable</button>
+        </div>
+
+        <!-- Programs Grid -->
+        <div class="row g-4" id="programsGrid">
+
+          <!-- Program 1: Computer & AI -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="computer" data-tags="software machine learning data algorithms python cloud cybersecurity">
+            <div class="ec-card"
+                 data-modal-title="B.Sc. in Computer &amp; Artificial Intelligence Engineering"
+                 data-modal-dept="Department of Electrical &amp; Computer Engineering"
+                 data-modal-overview="Prepares students at the intersection of modern hardware architectures and artificial intelligence algorithms. You will master neural network deployment, distributed cloud infrastructure, operating systems, and computer security."
+                 data-modal-credits="128 Credit Hours (ABET Accredited)"
+                 data-modal-duration="4 Years &bull; Full-Time or Accelerated"
+                 data-modal-careers="AI Engineer, Cloud Architect, Systems Programmer, Cyber Defense Analyst, Machine Learning Researcher"
+                 data-modal-modules="Data Structures &amp; Algorithms, Computer Architecture, Deep Learning Architectures, Operating Systems, Parallel &amp; Distributed Computing, Senior Capstone Project"
+                 data-program-slug="B.Sc. in Computer &amp; Artificial Intelligence Engineering">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=700&q=80" 
+                     alt="Computer code algorithms on dual monitors" loading="lazy">
+                <span class="ec-card-tag">Computer &amp; AI</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">B.Sc. in Computer &amp; AI Engineering</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Architect high-performance distributed systems, machine learning models, and edge compute firmware.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 128 Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 2: Mechanical & Aerospace -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="mechanical" data-tags="cad thermal fluids thermodynamics propulsion aircraft structures">
+            <div class="ec-card"
+                 data-modal-title="B.Sc. in Mechanical &amp; Aerospace Engineering"
+                 data-modal-dept="Department of Mechanical &amp; Aerospace Engineering"
+                 data-modal-overview="Combines traditional solid and fluid mechanics with modern aerospace systems, computational fluid dynamics (CFD), structural finite element analysis (FEA), and propulsion dynamics."
+                 data-modal-credits="130 Credit Hours (ABET Accredited)"
+                 data-modal-duration="4 Years &bull; Full-Time"
+                 data-modal-careers="Aerospace Engineer, Propulsion Specialist, Stress Analyst, Automotive Design Engineer, CAD Specialist"
+                 data-modal-modules="Thermodynamics I &amp; II, Fluid Mechanics, Aerodynamics &amp; Flight Mechanics, Heat Transfer, Machine Component Design, Propulsion Systems"
+                 data-program-slug="B.Sc. in Mechanical &amp; Aerospace Engineering">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=700&q=80" 
+                     alt="Precision metallic turbine gears and machinery" loading="lazy">
+                <span class="ec-card-tag">Mechanical</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">B.Sc. in Mechanical &amp; Aerospace</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Design flight vehicles, aerodynamic components, thermal management, and precision mechanical systems.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 130 Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 3: Robotics & Autonomous Systems -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="robotics" data-tags="mechatronics sensors ros2 actuators computer vision automation drones">
+            <div class="ec-card"
+                 data-modal-title="B.Sc. in Robotics &amp; Autonomous Systems"
+                 data-modal-dept="Division of Mechatronics &amp; Automation"
+                 data-modal-overview="Interdisciplinary program synthesizing mechanical kinematics, embedded microelectronics, and computer vision. Students learn to program industrial multi-axis arms, autonomous mobile robots (AMRs), and unmanned aerial systems."
+                 data-modal-credits="132 Credit Hours (ABET Accredited)"
+                 data-modal-duration="4 Years &bull; Full-Time"
+                 data-modal-careers="Robotics Software Engineer, Automation Architect, Computer Vision Engineer, Control Systems Specialist"
+                 data-modal-modules="Robot Kinematics &amp; Dynamics, Microcontroller Interfacing, Computer Vision for Robotics, ROS2 Architecture, Feedback Control Systems, Autonomous Navigation"
+                 data-program-slug="B.Sc. in Robotics &amp; Autonomous Systems">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80" 
+                     alt="Robotic arm in high-tech manufacturing center" loading="lazy">
+                <span class="ec-card-tag">Robotics</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">B.Sc. in Robotics &amp; Mechatronics</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Integrate robotic perception, kinematics, microcontrollers, and real-time control algorithms.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 132 Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 4: Electrical & Clean Energy -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="electrical" data-tags="circuits power microgrid solar battery semiconductors signal processing">
+            <div class="ec-card"
+                 data-modal-title="B.Sc. in Electrical &amp; Clean Energy Engineering"
+                 data-modal-dept="Department of Electrical &amp; Computer Engineering"
+                 data-modal-overview="Focuses on modern electrical power transmission, smart microgrids, battery energy storage systems, photovoltaic integration, power electronics, and high-voltage circuit design."
+                 data-modal-credits="128 Credit Hours (ABET Accredited)"
+                 data-modal-duration="4 Years &bull; Full-Time"
+                 data-modal-careers="Power Systems Engineer, Renewable Energy Specialist, Microgrid Architect, Hardware Test Engineer"
+                 data-modal-modules="Circuits &amp; Electronics, Signals &amp; Linear Systems, Power Electronics, Renewable Energy Conversion, Smart Grid Protection, Semiconductor Devices"
+                 data-program-slug="B.Sc. in Electrical &amp; Clean Energy Engineering">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=700&q=80" 
+                     alt="Electrical solar circuit array and energy storage hardware" loading="lazy">
+                <span class="ec-card-tag">Electrical</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">B.Sc. in Electrical &amp; Clean Energy</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Pioneer sustainable microgrids, high-voltage battery storage, and advanced semiconductor circuits.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 128 Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 5: Civil & Sustainable Infrastructure -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="civil" data-tags="structures bridges environmental geotechnical concrete seismic materials water">
+            <div class="ec-card"
+                 data-modal-title="B.Sc. in Civil &amp; Sustainable Infrastructure"
+                 data-modal-dept="Department of Civil &amp; Environmental Engineering"
+                 data-modal-overview="Empowers engineers to design climate-resilient bridges, seismic-resistant skyscrapers, water desalination facilities, and intelligent public transit networks."
+                 data-modal-credits="130 Credit Hours (ABET Accredited)"
+                 data-modal-duration="4 Years &bull; Full-Time"
+                 data-modal-careers="Structural Engineer, Environmental Consultant, Project Superintendent, Geotechnical Engineer"
+                 data-modal-modules="Statics &amp; Mechanics of Materials, Structural Analysis, Geotechnical Engineering, Water Resources &amp; Hydrology, Reinforced Concrete Design"
+                 data-program-slug="B.Sc. in Civil &amp; Sustainable Infrastructure">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=700&q=80" 
+                     alt="Architectural modern bridge and civil infrastructure design" loading="lazy">
+                <span class="ec-card-tag">Civil</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">B.Sc. in Civil &amp; Sustainable Infrastructure</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Construct earthquake-resistant structures, eco-friendly materials, and sustainable municipal transit.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 130 Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program 6: Master of Science in Systems Engineering -->
+          <div class="col-md-6 col-lg-4 program-card-col" data-category="computer" data-tags="graduate masters systems architecture enterprise optimization cybersecurity">
+            <div class="ec-card"
+                 data-modal-title="M.Sc. in Advanced Systems &amp; Data Engineering"
+                 data-modal-dept="Graduate School of Engineering"
+                 data-modal-overview="A graduate master's program focused on large-scale cyber-physical systems, multi-agent modeling, probabilistic reliability engineering, and enterprise cloud data pipelines."
+                 data-modal-credits="36 Graduate Credits"
+                 data-modal-duration="2 Years &bull; Full-Time or Hybrid"
+                 data-modal-careers="Principal Systems Architect, Enterprise Data Engineer, Reliability Director, Technical Director"
+                 data-modal-modules="Large-Scale Systems Modeling, Probabilistic Risk Assessment, High-Performance Computing, Master's Thesis Research"
+                 data-program-slug="M.Sc. in Advanced Systems &amp; Data Engineering">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" 
+                     alt="Motherboard circuitry and microchip processor" loading="lazy">
+                <span class="ec-card-tag">Graduate Program</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2 program-title">M.Sc. in Advanced Systems &amp; Data</h3>
+              <p class="text-secondary small mb-3 flex-grow-1 program-desc">
+                Lead enterprise systems architecture, multi-agent simulation, and high-throughput data pipelines.
+              </p>
+              <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 36 Grad Credits</span>
+                <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#programDetailsModal">
+                  View Syllabus <i class="bi bi-info-circle ms-1" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Empty State (When no search matches) -->
+        <div id="noProgramsFound" class="text-center py-5" style="display: none;">
+          <div class="display-5 text-muted mb-3"><i class="bi bi-search"></i></div>
+          <h3 class="h5 fw-bold text-dark">No Matching Engineering Programs</h3>
+          <p class="text-muted small">We couldn't find any programs matching your search filters.</p>
+          <button type="button" class="btn btn-outline-primary btn-sm" id="clearProgramSearchBtn">
+            Reset Filters &amp; Show All
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Program Syllabus Modal Details -->
+    <div class="modal fade" id="programDetailsModal" tabindex="-1" aria-labelledby="modalProgramTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg">
+          <div class="modal-header bg-primary text-white p-4">
+            <div>
+              <span class="badge bg-warning text-dark mb-2" id="modalProgramDepartment">Department of Engineering</span>
+              <h3 class="modal-title h4 fw-bold text-white mb-0" id="modalProgramTitle">Program Title</h3>
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4">
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-2">Program Overview</h4>
+            <p class="text-secondary" id="modalProgramOverview"></p>
+
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="p-3 bg-light rounded-3">
+                  <span class="small text-muted d-block">Degree Credits:</span>
+                  <strong class="text-primary" id="modalProgramCredits">128 Credit Hours</strong>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="p-3 bg-light rounded-3">
+                  <span class="small text-muted d-block">Expected Duration:</span>
+                  <strong class="text-primary" id="modalProgramDuration">4 Years (8 Semesters)</strong>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-2">Core Curriculum Modules</h4>
+            <ul class="list-group list-group-flush mb-4 rounded-3 border" id="modalProgramCurriculum"></ul>
+
+            <h4 class="h6 fw-bold text-uppercase text-muted mb-2">Career Pathways &amp; Outcomes</h4>
+            <div id="modalProgramCareers" class="d-flex flex-wrap gap-1 mb-4"></div>
+          </div>
+          <div class="modal-footer bg-light p-3">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="register.html" class="btn btn-primary" id="modalApplyLink">
+              <i class="bi bi-pencil-square me-1"></i> Apply for This Program
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-3">
+            <img src="assets/images/logo.svg" alt="Engineering College" width="190" height="44" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="small text-secondary mb-3">
+            Engineering College is a premier technical institution committed to transformative education, cutting-edge engineering research, and leadership in global technology.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light">ABET Accredited</span>
+            <span class="badge bg-dark border border-secondary text-light">IEEE Partner</span>
+            <span class="badge bg-dark border border-secondary text-light">ISO 9001:2015</span>
+          </div>
+          <div class="footer-socials">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="Engineering College on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com" class="footer-social-btn" aria-label="Engineering College on GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="Engineering College on YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="Engineering College on X" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Academic Programs</a></li>
+            <li><a href="admissions.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Admissions &amp; Aid</a></li>
+            <li><a href="student-life.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Campus Life &amp; News</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Contact Directory</a></li>
+            <li><a href="register.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Online Registration</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5>Departments</h5>
+          <ul class="footer-links">
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Computer &amp; AI Eng.</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Mechanical &amp; Aero</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Electrical &amp; Microelectronics</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Robotics &amp; Mechatronics</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Civil &amp; Environmental Eng.</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Materials &amp; Nanotech</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5>Campus Location</h5>
+          <address class="small text-secondary mb-3 not-italic">
+            <p class="mb-1"><i class="bi bi-geo-alt-fill text-warning me-2" aria-hidden="true"></i> 100 Innovation Parkway, Tech Campus</p>
+            <p class="mb-1"><i class="bi bi-telephone-fill text-warning me-2" aria-hidden="true"></i> +1 (800) 555-ENG-COLLEGE</p>
+            <p class="mb-1"><i class="bi bi-envelope-fill text-warning me-2" aria-hidden="true"></i> admissions@engineeringcollege.edu</p>
+            <p class="mb-0"><i class="bi bi-clock-fill text-warning me-2" aria-hidden="true"></i> Mon – Fri: 08:30 AM – 05:30 PM</p>
+          </address>
+          <div class="p-2 rounded bg-dark border border-secondary text-secondary small">
+            <i class="bi bi-shield-check text-success me-1" aria-hidden="true"></i> Campus Safety 24/7 Dispatch: <strong>+1 (800) 555-SAFE</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary">
+        <div>
+          &copy; 2026 Engineering College. All rights reserved. Built with semantic HTML5, CSS3, Bootstrap 5, &amp; vanilla JavaScript.
+        </div>
+        <div class="mt-2 mt-md-0 d-flex gap-3">
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/programs.js"></script>
+</body>
+</html>

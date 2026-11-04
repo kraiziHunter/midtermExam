@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering College - Premier institution for undergraduate and graduate engineering education, cutting-edge research, and innovation. ABET-accredited programs.">
+  <meta name="keywords" content="engineering college, computer science, robotics, mechanical engineering, civil engineering, admissions, STEM degree">
+  <title>Engineering College | Empowering Next-Gen Engineers &amp; Innovators</title>
+
+  <!-- Favicon -->
+ 
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Reading Progress Bar -->
+  <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Skip to Content Link (Accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Fixed Top Navigation Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar" aria-label="Main Navigation">
+      <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html" aria-label="Engineering College Homepage">
+          <svg viewBox="color= #f8f8f9; 0 53 32" width="50" height="30" xmlns="http://www.w3.org/2000/svg" class="h-6 w-10 shrink-0 lg:block lg:h-[30px] lg:w-[50px] "><path d="M0 26.097h23.556v5.903H0zM0 12.931h23.556v5.95H0zM0 0h23.556v5.81H0zM29.678 0H53v5.81H35.66v20.287H53V32H29.678z" fill="#0C1830"></path></svg>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar" aria-controls="primaryNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="primaryNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="programs.html">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admissions.html">Admissions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="student-life.html">Student Life &amp; News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <!-- Theme Mode Switcher -->
+            <li class="nav-item ms-lg-2 my-2 my-lg-0">
+              <button class="theme-toggle-btn" type="button" aria-label="Toggle dark/light theme" title="Toggle theme">
+                <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+              </button>
+            </li>
+            <!-- CTA Apply Button -->
+            <li class="nav-item ms-lg-2">
+              <a class="btn-nav-apply" href="register.html">
+                <i class="bi bi-pencil-square" aria-hidden="true"></i>
+                <span>Register / Apply</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-grid-pattern" aria-hidden="true"></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="hero-badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              <span>ABET-Accredited Excellence &bull; Fall 2026 Applications Open</span>
+            </div>
+            <h1 id="hero-heading" class="hero-title display-4">
+              Building the Future Through <span class="text-warning">Engineering &amp; Innovation</span>
+            </h1>
+            <p class="hero-subtitle">
+              At Engineering College, we combine rigorous academic foundations with hands-on lab experimentation. Prepare for impactful careers in robotics, AI, aerospace, clean energy, and sustainable infrastructure.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+              <a href="programs.html" class="btn btn-amber btn-lg px-4">
+                <i class="bi bi-mortarboard-fill me-1" aria-hidden="true"></i> Explore Programs
+              </a>
+              <a href="register.html" class="btn btn-outline-light btn-lg px-4">
+                <i class="bi bi-arrow-right-circle me-1" aria-hidden="true"></i> Apply Online
+              </a>
+            </div>
+
+            <!-- Accreditation micro badges -->
+            <div class="d-flex align-items-center gap-4 mt-4 pt-3 border-top border-white-50 justify-content-center justify-content-lg-start flex-wrap">
+              <div class="d-flex align-items-center gap-2 small text-white-50">
+                <i class="bi bi-award text-warning fs-5" aria-hidden="true"></i>
+                <span class="text-white">ABET Accredited</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 small text-white-50">
+                <i class="bi bi-cpu text-info fs-5" aria-hidden="true"></i>
+                <span class="text-white">IEEE Student Branch</span>
+              </div>
+              <div class="d-flex align-items-center gap-2 small text-white-50">
+                <i class="bi bi-globe-americas text-success fs-5" aria-hidden="true"></i>
+                <span class="text-white">Top 25 Engineering Rankings</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                   alt="Engineering students working with robotic arms and advanced instrumentation in high-tech laboratory" 
+                   class="img-fluid rounded-4 shadow-xl border border-white-50"
+                   width="600" height="450" loading="eager">
+              <div class="card bg-white text-dark position-absolute bottom-0 start-0 m-3 p-3 rounded-3 shadow-lg d-none d-sm-flex align-items-center gap-3 border-0" style="max-width: 280px;">
+                <div class="bg-primary text-white p-2 rounded-2">
+                  <i class="bi bi-shield-check fs-4" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <div class="fw-bold fs-6">98% Career Placement</div>
+                  <small class="text-muted">Within 6 months of graduation</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Statistics Banner -->
+    <section class="section-padding-sm bg-body-tertiary border-bottom border-top" aria-label="Key Institution Statistics">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <div class="stat-number">45+</div>
+              <div class="stat-label">Specialized Labs</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <div class="stat-number">14:1</div>
+              <div class="stat-label">Student-Faculty Ratio</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <div class="stat-number">$18M</div>
+              <div class="stat-label">Research Grants</div>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-box">
+              <div class="stat-number">12,500+</div>
+              <div class="stat-label">Alumni Worldwide</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Pillars / Why Choose Us -->
+    <section class="section-padding" aria-labelledby="pillars-heading">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-eyebrow">Academic Excellence</span>
+          <h2 id="pillars-heading" class="section-title">Engineered for Real-World Impact</h2>
+          <p class="section-desc">
+            We bridge theoretical physics, mathematics, and computational science with hands-on project engineering from your very first semester.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="ec-card">
+              <div class="ec-card-icon">
+                <i class="bi bi-cpu-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Modern Laboratories</h3>
+              <p class="text-muted small mb-0">
+                Access cleanrooms, wind tunnels, 3D printing makerspaces, and high-performance GPU supercomputing clusters 24/7.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="ec-card">
+              <div class="ec-card-icon">
+                <i class="bi bi-person-workspace" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">World-Class Faculty</h3>
+              <p class="text-muted small mb-0">
+                Learn directly from IEEE fellows, NSF career award recipients, and industry consultants who mentor your undergraduate research.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="ec-card">
+              <div class="ec-card-icon">
+                <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Industry Co-ops &amp; Internships</h3>
+              <p class="text-muted small mb-0">
+                Partner with 180+ technology leaders including Intel, Boeing, Tesla, and Siemens for paid 6-month engineering co-ops.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="ec-card">
+              <div class="ec-card-icon">
+                <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Global Accreditation</h3>
+              <p class="text-muted small mb-0">
+                ABET-accredited degrees ensuring seamless international professional licensure (PE, FE) and graduate school recognition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Programs Preview -->
+    <section class="section-padding bg-body-tertiary" aria-labelledby="programs-preview-heading">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5">
+          <div>
+            <span class="section-eyebrow">Undergraduate &amp; Graduate</span>
+            <h2 id="programs-preview-heading" class="section-title mb-1">Featured Degree Programs</h2>
+            <p class="section-desc text-start mb-0">Discover accredited curricula tailored for the demands of 21st-century technology.</p>
+          </div>
+          <div class="mt-3 mt-md-0">
+            <a href="programs.html" class="btn btn-outline-primary">
+              View All Programs <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Program Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="ec-card">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=700&q=80" 
+                     alt="Neural network code and computer engineering workstation" 
+                     loading="lazy">
+                <span class="ec-card-tag">Computer &amp; AI</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">B.Sc. in Computer &amp; AI Engineering</h3>
+              <p class="text-muted small mb-3 flex-grow-1">
+                Master machine learning architectures, distributed cloud computing, cybersecurity, and embedded hardware-software codesign.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 4 Years &bull; 128 Credits</span>
+                <a href="programs.html" class="fw-bold small text-primary">Details <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="ec-card">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=700&q=80" 
+                     alt="Mechanical gears and automated manufacturing assembly line" 
+                     loading="lazy">
+                <span class="ec-card-tag">Mechanical</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">B.Sc. in Mechanical &amp; Aerospace</h3>
+              <p class="text-muted small mb-3 flex-grow-1">
+                Explore fluid dynamics, thermal systems, CAD modeling, aerospace propulsion, and autonomous vehicular structures.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 4 Years &bull; 130 Credits</span>
+                <a href="programs.html" class="fw-bold small text-primary">Details <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="ec-card">
+              <div class="ec-card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=700&q=80" 
+                     alt="Industrial robot manipulator and electronics controller" 
+                     loading="lazy">
+                <span class="ec-card-tag">Robotics</span>
+              </div>
+              <h3 class="h5 fw-bold mb-2">B.Sc. in Robotics &amp; Automation</h3>
+              <p class="text-muted small mb-3 flex-grow-1">
+                Integrate sensors, microcontrollers, computer vision, kinematics, and programmable logic controllers for smart factory automation.
+              </p>
+              <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                <span class="small text-muted"><i class="bi bi-clock me-1" aria-hidden="true"></i> 4 Years &bull; 132 Credits</span>
+                <a href="programs.html" class="fw-bold small text-primary">Details <i class="bi bi-chevron-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Life & News Spotlight -->
+    <section class="section-padding" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-eyebrow">Campus Life &amp; Research</span>
+          <h2 id="news-heading" class="section-title">Latest Campus Happenings</h2>
+          <p class="section-desc">Catch up on groundbreaking student research achievements, competitions, and college announcements.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <article class="ec-card">
+              <div class="ec-card-img-wrapper" style="aspect-ratio: 16/9;">
+                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" 
+                     alt="Students collaborating passionately on a robotics capstone project" 
+                     loading="lazy">
+                <span class="ec-card-tag">Competition Victory</span>
+              </div>
+              <span class="text-muted small mb-2"><i class="bi bi-calendar-event me-1" aria-hidden="true"></i> October 28, 2026</span>
+              <h3 class="h4 fw-bold mb-2">Engineering College Formula SAE Team Takes 1st Place at National Electric Vehicle Grand Prix</h3>
+              <p class="text-muted">
+                Our 24-member student team designed, manufactured, and raced an entirely custom carbon-fiber chassis electric racecar reaching 0-60mph in 2.6 seconds.
+              </p>
+              <a href="student-life.html" class="btn btn-outline-primary btn-sm align-self-start mt-auto">
+                Read Full Story <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="d-flex flex-column gap-3">
+              <!-- Sub-article 1 -->
+              <article class="card p-3 border rounded-3 bg-surface">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=350&q=80" 
+                         alt="Solar panels and microgrid engineering installation" 
+                         class="img-fluid rounded-2" loading="lazy">
+                  </div>
+                  <div class="col-8">
+                    <span class="badge bg-primary-subtle text-primary mb-1">Campus Facility</span>
+                    <h4 class="h6 fw-bold mb-1">
+                      <a href="student-life.html" class="text-decoration-none text-reset">New $4.2M Clean Energy Microgrid Research Lab Unveiled</a>
+                    </h4>
+                    <p class="text-muted small mb-0">Providing live power grid simulation and storage research for electrical engineering students.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Sub-article 2 -->
+              <article class="card p-3 border rounded-3 bg-surface">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=350&q=80" 
+                         alt="Female engineering students collaborating in electronics lab" 
+                         class="img-fluid rounded-2" loading="lazy">
+                  </div>
+                  <div class="col-8">
+                    <span class="badge bg-success-subtle text-success mb-1">STEM Outreach</span>
+                    <h4 class="h6 fw-bold mb-1">
+                      <a href="student-life.html" class="text-decoration-none text-reset">Women in Engineering Society Hosts Annual High-School Hackathon</a>
+                    </h4>
+                    <p class="text-muted small mb-0">Over 350 prospective engineers mentored in Python robotics and sensor breadboarding.</p>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Sub-article 3 -->
+              <article class="card p-3 border rounded-3 bg-surface">
+                <div class="row g-3 align-items-center">
+                  <div class="col-4">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=350&q=80" 
+                         alt="Engineering college students celebrating graduation" 
+                         class="img-fluid rounded-2" loading="lazy">
+                  </div>
+                  <div class="col-8">
+                    <span class="badge bg-warning-subtle text-dark mb-1">Admissions</span>
+                    <h4 class="h6 fw-bold mb-1">
+                      <a href="admissions.html" class="text-decoration-none text-reset">Fall 2026 Merit Scholarships &amp; Priority Deadlines Announced</a>
+                    </h4>
+                    <p class="text-muted small mb-0">Over $3.5M in non-repayable institutional scholarships available for qualifying applicants.</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Testimonials -->
+    <section class="section-padding bg-body-tertiary" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="text-center section-header">
+          <span class="section-eyebrow">Voices of Success</span>
+          <h2 id="testimonials-heading" class="section-title">What Our Students Say</h2>
+          <p class="section-desc">Hear how hands-on engineering education transforms career trajectories.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="ec-card">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4 flex-grow-1">
+                "The accessibility of faculty here is unmatched. By sophomore year, I was working in the autonomous flight lab writing ROS nodes for quadcopters, which directly landed me my internship at Lockheed Martin."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center fw-bold" style="width: 46px; height: 46px;">
+                  MR
+                </div>
+                <div>
+                  <div class="fw-bold">Marcus Rivera</div>
+                  <small class="text-muted">Aerospace Engineering &bull; Class of '25</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ec-card">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4 flex-grow-1">
+                "The capstone project was like running a real engineering startup. We fabricated custom IoT water quality sensors deployed in municipal test reservoirs. The career center helped me secure two full-time offers."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center fw-bold" style="width: 46px; height: 46px;">
+                  SL
+                </div>
+                <div>
+                  <div class="fw-bold">Sarah Lin</div>
+                  <small class="text-muted">Civil &amp; Environmental &bull; Class of '24</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="ec-card">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4 flex-grow-1">
+                "Coming from abroad, the supportive community and practical lab curriculum made adapting seamless. The IEEE student branch gave me leadership skills and lifelong technical colleagues."
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-warning text-dark d-flex align-items-center justify-content-center fw-bold" style="width: 46px; height: 46px;">
+                  AK
+                </div>
+                <div>
+                  <div class="fw-bold">Aravind Kumar</div>
+                  <small class="text-muted">Electrical &amp; Computer &bull; Class of '25</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section-padding position-relative text-white" style="background: linear-gradient(135deg, #091f38, #134074);" aria-label="Admissions Call to Action">
+      <div class="container text-center">
+        <span class="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">Fall 2026 Admissions Open</span>
+        <h2 class="display-6 fw-bold mb-3 text-white">Ready to Shape the Future with Us?</h2>
+        <p class="text-white-50 lead mx-auto mb-4" style="max-width: 650px;">
+          Submit your prospective registration today to receive personal faculty counseling, portfolio reviews, and scholarship consideration.
+        </p>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="register.html" class="btn btn-amber btn-lg px-4">
+            <i class="bi bi-pencil-fill me-1" aria-hidden="true"></i> Start Student Registration
+          </a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg px-4">
+            <i class="bi bi-telephone-fill me-1" aria-hidden="true"></i> Contact Admissions Office
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+        <!-- Col 1: Brand Info -->
+        <div class="col-lg-4 col-md-6">
+          <div class="mb-3">
+            <img src="assets/images/logo.svg" alt="Engineering College" width="190" height="44" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="small text-secondary mb-3">
+            Engineering College is a premier technical institution committed to transformative education, cutting-edge engineering research, and leadership in global technology.
+          </p>
+          <div class="d-flex gap-2">
+            <span class="badge bg-dark border border-secondary text-light">ABET Accredited</span>
+            <span class="badge bg-dark border border-secondary text-light">IEEE Partner</span>
+            <span class="badge bg-dark border border-secondary text-light">ISO 9001:2015</span>
+          </div>
+          <div class="footer-socials">
+            <a href="https://linkedin.com" class="footer-social-btn" aria-label="Engineering College on LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com" class="footer-social-btn" aria-label="Engineering College on GitHub" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a href="https://youtube.com" class="footer-social-btn" aria-label="Engineering College on YouTube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+            <a href="https://twitter.com" class="footer-social-btn" aria-label="Engineering College on X (formerly Twitter)" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-3 col-6">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> About Us</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Academic Programs</a></li>
+            <li><a href="admissions.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Admissions &amp; Aid</a></li>
+            <li><a href="student-life.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Campus Life &amp; News</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Contact Directory</a></li>
+            <li><a href="register.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Online Registration</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Academic Fields -->
+        <div class="col-lg-3 col-md-3 col-6">
+          <h5>Departments</h5>
+          <ul class="footer-links">
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Computer &amp; AI Eng.</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Mechanical &amp; Aero</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Electrical &amp; Microelectronics</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Robotics &amp; Mechatronics</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Civil &amp; Environmental Eng.</a></li>
+            <li><a href="programs.html"><i class="bi bi-chevron-right small" aria-hidden="true"></i> Materials &amp; Nanotech</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Campus Contact Channels -->
+        <div class="col-lg-3 col-md-6">
+          <h5>Campus Location</h5>
+          <address class="small text-secondary mb-3 not-italic">
+            <p class="mb-1"><i class="bi bi-geo-alt-fill text-warning me-2" aria-hidden="true"></i> 100 Innovation Parkway, Tech Campus</p>
+            <p class="mb-1"><i class="bi bi-telephone-fill text-warning me-2" aria-hidden="true"></i> +1 (800) 555-ENG-COLLEGE</p>
+            <p class="mb-1"><i class="bi bi-envelope-fill text-warning me-2" aria-hidden="true"></i> admissions@engineeringcollege.edu</p>
+            <p class="mb-0"><i class="bi bi-clock-fill text-warning me-2" aria-hidden="true"></i> Mon – Fri: 08:30 AM – 05:30 PM</p>
+          </address>
+          <div class="p-2 rounded bg-dark border border-secondary text-secondary small">
+            <i class="bi bi-shield-check text-success me-1" aria-hidden="true"></i> Campus Safety 24/7 Dispatch: <strong>+1 (800) 555-SAFE</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary">
+        <div>
+          &copy; 2026 Engineering College. All rights reserved. Built with semantic HTML5, CSS3, Bootstrap 5, &amp; vanilla JavaScript.
+        </div>
+        <div class="mt-2 mt-md-0 d-flex gap-3">
+          <a href="contact.html">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="contact.html">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="contact.html">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" aria-label="Back to top of page" title="Back to top">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>

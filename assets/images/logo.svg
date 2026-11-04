@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60" role="img" aria-label="Engineering College Logo">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <!-- Icon Emblem -->
+  <g transform="translate(6, 6)">
+    <!-- Hexagon Outer Shield -->
+    <polygon points="24,2 44,13.5 44,36.5 24,48 4,36.5 4,13.5" fill="#0f172a" stroke="url(#logoGrad)" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Internal Tech Lines & Compass/Gear Core -->
+    <circle cx="24" cy="25" r="9" fill="url(#logoGrad)" opacity="0.9"/>
+    <circle cx="24" cy="25" r="4.5" fill="#ffffff"/>
+    <path d="M24,7 L24,14 M24,36 L24,43 M8,16 L14,20 M34,30 L40,34 M8,34 L14,30 M34,20 L40,16" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="24,11 26,17 32,17 27,21 29,27 24,23 19,27 21,21 16,17 22,17" fill="url(#goldGrad)" transform="translate(0, -1) scale(0.65)"/>
+  </g>
+  <!-- Text: Institution Name -->
+  <text x="64" y="27" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif" font-size="20" font-weight="800" fill="currentColor" letter-spacing="-0.5">ENGINEERING</text>
+  <text x="64" y="45" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" fill="url(#logoGrad)" letter-spacing="3.5">COLLEGE</text>
+</svg>
